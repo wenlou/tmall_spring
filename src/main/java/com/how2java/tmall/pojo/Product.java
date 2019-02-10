@@ -22,6 +22,18 @@ public class Product {
     private int stock;
     private Date createDate;
 
+    //如果既没有指明 关联到哪个Column,又没有明确要用@Transient忽略，那么就会自动关联到表对应的同名字段
+    @Transient
+    private ProductImage firstProductImage;
+
+    public ProductImage getFirstProductImage() {
+        return firstProductImage;
+    }
+
+    public void setFirstProductImage(ProductImage firstProductImage) {
+        this.firstProductImage = firstProductImage;
+    }
+
     public String getSubTitle() {
         return subTitle;
     }
