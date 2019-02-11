@@ -31,6 +31,9 @@ public class PropertyService {
         Sort sort = new Sort(Sort.Direction.DESC, "id");
         return propertyDAO.findAll(sort);
     }
+    public List<Property> listByCategory(Category category) {
+        return propertyDAO.findByCategory(category);
+    }
 
     public void add(Property bean) {
         propertyDAO.save(bean);
