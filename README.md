@@ -4,29 +4,28 @@ Vue + SpringBoot实现的仿天猫商城
 # 效果图
 
 ## 首页
-
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8145.png)
+![][image-1]
 
 ## 产品页
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8136.png)
+![][image-1]
 
 ## 分类页
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8143.png)
+![][image-2]
 
 ## 购物车页
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8135.png)
+![][image-3]
 
 ## 结算页
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8134.png)
+![][image-4]
 
 ## 我的订单页
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8131.png)
+![][image-5]
 
 ## 确认收货
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8129.png)
+![][image-6]
 
 ## 评价
-![image](https://github.com/wenlou/tmall_spring/tree/master/doucument/8127.png)
+![][image-7]
 
 # 技术
 
@@ -45,3 +44,15 @@ Vue + SpringBoot实现的仿天猫商城
 - Druid
 - MySQL
 - Maven
+
+
+
+
+[image-1]:	/doucument/8145.png
+[image-2]:	/doucument/8136.png
+[image-3]:	/doucument/8143.png
+[image-4]:	/doucument/8135.png
+[image-5]:	/doucument/8134.png
+[image-6]:	/doucument/8131.png
+[image-7]:	/doucument/8129.png
+[image-8]:	/doucument/8127.png
