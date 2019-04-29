@@ -4,6 +4,7 @@ import com.how2java.tmall.dao.OrderItemDAO;
 import com.how2java.tmall.dao.UserDAO;
 import com.how2java.tmall.pojo.Order;
 import com.how2java.tmall.pojo.OrderItem;
+import com.how2java.tmall.pojo.Product;
 import com.how2java.tmall.pojo.User;
 import com.how2java.tmall.util.Page4Navigator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,30 @@ public class OrderIteamService {
             fill(order);
         }
     }
+    public void update(OrderItem orderItem) {
+        orderItemDAO.save(orderItem);
+    }
+    public void add(OrderItem orderItem) {
+        orderItemDAO.save(orderItem);
+    }
+    public OrderItem get(int id) {
+        return orderItemDAO.findOne(id);
+    }
 
+    public void delete(int id) {
+        orderItemDAO.delete(id);
+    }
+    public List<OrderItem> listByProduct(Product product) {
+        return orderItemDAO.findByProduct(product);
+    }
+    public int getSaleCount(Product product) {
+        List<OrderItem> ois =listByProduct(product);
+        int result =0;
+        for (OrderItem oi : ois) {
+            if(null!=oi.getOrder())
+                if(null!= oi.getOrder() && null!=oi.getOrder().getPayDate())
+                    result+=oi.getNumber();
+        }
+        return result;
+    }
 }
